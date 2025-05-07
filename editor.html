@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Éditeur d'actualités</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="header-left">
+          <a href="index.html" class="back-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          </a>
+          <h1 id="editor-title" class="editor-title">Nouvelle actualité</h1>
+        </div>
+        <button id="save-article-btn" class="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+          Enregistrer
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="editor-container">
+        <div class="form-group">
+          <label for="article-image">Image bannière (URL)</label>
+          <input type="text" id="article-image" placeholder="URL de l'image" class="input">
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="article-title" placeholder="Titre de l'actualité" class="input title-input">
+        </div>
+
+        <div class="form-group">
+          <textarea id="article-description" placeholder="Description courte" class="textarea" rows="2"></textarea>
+        </div>
+
+        <div class="form-group">
+          <select id="article-category" class="select">
+            <option value="" disabled selected>Sélectionner une catégorie</option>
+            <option value="Tutoriel">Tutoriel</option>
+            <option value="Technologie">Technologie</option>
+            <option value="Productivité">Productivité</option>
+            <option value="Business">Business</option>
+            <option value="Design">Design</option>
+          </select>
+        </div>
+
+        <div class="form-group content-group">
+          <label for="article-content">Contenu détaillé</label>
+          <textarea id="article-content" placeholder="Contenu détaillé de l'actualité" class="textarea content-textarea" rows="10"></textarea>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="editor.js"></script>
+</body>
+</html>
