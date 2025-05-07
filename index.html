@@ -1,86 +1,16 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fil d'actualités</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="container">
-    <!-- Header -->
-    <header class="header">
-      <div class="header-content">
-        <div></div> <!-- Espace vide à gauche -->
-        <button id="new-article-btn" class="button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
-          Nouvelle actualité
-        </button>
-      </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="main-content">
-      <div class="page-title">
-        <h1>Fil d'actualités</h1>
-        <p class="subtitle">Les dernières actualités</p>
-      </div>
-
-      <!-- News Feed -->
-      <div id="news-feed" class="news-feed">
-        <!-- Articles will be inserted here by JavaScript -->
-      </div>
-    </main>
-  </div>
-
-  <!-- Auth Modal Template -->
-  <div id="auth-modal" class="modal">
-    <div class="modal-overlay"></div>
-    <div class="modal-container">
-      <div class="modal-header">
-        <h2 id="auth-modal-title">Authentification requise</h2>
-        <button class="close-button" id="auth-close">×</button>
-      </div>
-      <div class="modal-content">
-        <div class="form-group">
-          <label for="pin-input">Code PIN (6 chiffres)</label>
-          <input type="password" id="pin-input" placeholder="Entrez le code PIN" maxlength="6" class="pin-input">
-          <p id="pin-error" class="error-message"></p>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button class="button button-outline" id="auth-cancel">Annuler</button>
-        <button class="button" id="auth-confirm">Confirmer</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- News Modal Template -->
-  <div id="news-modal" class="modal">
-    <div class="modal-overlay"></div>
-    <div class="news-modal-container">
-      <div id="news-modal-backdrop" class="news-modal-backdrop"></div>
-      <div class="news-modal-content">
-        <button class="close-button" id="news-close">×</button>
-        <div class="news-modal-header">
-          <div class="news-meta">
-            <span id="news-category" class="badge"></span>
-            <span id="news-date" class="date">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-              <span id="news-date-text"></span>
-            </span>
-          </div>
-          <h2 id="news-title" class="news-title"></h2>
-          <p id="news-description" class="news-description"></p>
-        </div>
-        <div id="news-image-container" class="news-image-container">
-          <img id="news-image" src="/placeholder.svg" alt="" class="news-image">
-        </div>
-        <div id="news-content" class="news-content"></div>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <a href="./editor.html">Editor</a>
+    <div id="news-feed" class="news-feed">
+  <!-- Articles will be inserted here by JavaScript -->
+</div>
+    <script src="./script.js"></script>
 </body>
 </html>
